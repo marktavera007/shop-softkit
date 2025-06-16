@@ -4,7 +4,7 @@ import { UserAuthRegisterForm } from '../components/auth/register-form';
 export default function RegisterView() {
 	return (
 		<div className="max-w-[400px] mx-auto min-h-screen flex items-center justify-center flex-col ">
-			<h1 className="mb-8 text-center text-xl font-semibold uppercase text-white">
+			<h1 className="mb-8 text-center text-xl font-semibold uppercase text-maquiperu-azul">
 				Registrar Usuario
 			</h1>
 			<UserAuthRegisterForm />
@@ -13,7 +13,7 @@ export default function RegisterView() {
 					¿Tienes una cuenta?{' '}
 					<Link
 						href="/auth/login"
-						className="text-pink-500 hover:text-pink-400"
+						className="text-maquiperu-naranja hover:text-maquiperu-naranja"
 					>
 						Inicia Sesión
 					</Link>

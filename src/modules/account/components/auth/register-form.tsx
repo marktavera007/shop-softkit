@@ -95,12 +95,14 @@ export function UserAuthRegisterForm() {
 								name="email"
 								render={({ field }) => (
 									<FormItem>
-										<FormLabel className="text-white mb-2">Email</FormLabel>
+										<FormLabel className="text-maquiperu-azul mb-2">
+											Email
+										</FormLabel>
 										<FormControl>
 											<Input
 												type="text"
 												disabled={isPending}
-												className="h-12 text-white bg-[#070A19] border-[#161A31] focus-visible:ring-0 focus-visible:border-gray-600 placeholder:text-gray-100/40"
+												className="h-12 text-maquiperu-azul bg-transparent border-maquiperu-azul/80 focus-visible:ring-0 focus-visible:border-gray-600 placeholder:text-maquiperu-azul/40"
 												placeholder="name@example.com"
 												{...field}
 											/>
@@ -116,7 +118,7 @@ export function UserAuthRegisterForm() {
 								name="password"
 								render={({ field }) => (
 									<FormItem>
-										<FormLabel className="text-white mb-2">
+										<FormLabel className="text-maquiperu-azul mb-2">
 											Contraseña
 										</FormLabel>
 										<FormControl>
@@ -124,7 +126,7 @@ export function UserAuthRegisterForm() {
 												<Input
 													type={showPassword ? 'text' : 'password'}
 													disabled={isPending}
-													className="h-12 text-white bg-[#070A19] border-[#161A31] focus-visible:ring-0 focus-visible:border-gray-600 placeholder:text-gray-100/40"
+													className="h-12 text-maquiperu-azul bg-transparent border-maquiperu-azul/80 focus-visible:ring-0 focus-visible:border-gray-600 placeholder:text-maquiperu-azul/40"
 													placeholder="Escribe tu contraseña"
 													{...field}
 												/>
@@ -155,14 +157,14 @@ export function UserAuthRegisterForm() {
 								name="confirmPassword"
 								render={({ field }) => (
 									<FormItem>
-										<FormLabel className="text-white mb-2">
+										<FormLabel className="text-maquiperu-azul mb-2">
 											Confirmar contraseña
 										</FormLabel>
 										<FormControl>
 											<Input
 												type={showPassword ? 'text' : 'password'}
 												disabled={isPending}
-												className="h-12 text-white bg-[#070A19] border-[#161A31] focus-visible:ring-0 focus-visible:border-gray-600 placeholder:text-gray-100/40"
+												className="h-12 text-maquiperu-azul bg-transparent border-maquiperu-azul/80 focus-visible:ring-0 focus-visible:border-gray-600 placeholder:text-maquiperu-azul/40"
 												placeholder="Vuelve a escribir tu contraseña"
 												{...field}
 											/>
@@ -179,7 +181,7 @@ export function UserAuthRegisterForm() {
 						<Button
 							type="submit"
 							disabled={isPending}
-							className="w-full mt-4 text-base cursor-pointer bg-[#d11f73] hover:bg-[#d81b60] text-white h-12 shadow-lg shadow-[#e91e63]/20 transition-all duration-300 hover:shadow-xl hover:shadow-[#e91e63]/30"
+							className="w-full mt-4 text-base cursor-pointer bg-maquiperu-azul hover:bg-maquiperu-azul text-white h-12 shadow-lg shadow-maquiperu-azul/20 transition-all duration-300 hover:shadow-xl hover:shadow-maquiperu-azul/30"
 						>
 							{isPending ? (
 								<>

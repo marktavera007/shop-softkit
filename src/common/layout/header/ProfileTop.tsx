@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-import { LogOut, SquareLibrary } from 'lucide-react';
+import { LogOut, Settings, SquareLibrary } from 'lucide-react';
 import {
 	DropdownMenu,
 	DropdownMenuContent,
@@ -43,17 +43,17 @@ export function UserDropdownMenu({ usuario }: any) {
 				<DropdownMenuSeparator className="mb-0" />
 				<DropdownMenuGroup>
 					<DropdownMenuItem asChild>
-						<Link href="/misCursos" className="flex items-center gap-2">
+						<Link href="/dashboard/orders" className="flex items-center gap-2">
 							<SquareLibrary className="mr-2 h-4 w-4" />
-							<span>Mis Cursos</span>
+							<span>Mis Pedidos</span>
 						</Link>
 					</DropdownMenuItem>
-					{/* <DropdownMenuItem asChild>
-						<Link href="/account/dashboard" className="flex items-center gap-2">
+					<DropdownMenuItem asChild>
+						<Link href="/dashboard" className="flex items-center gap-2">
 							<Settings className="mr-2 h-4 w-4" />
 							<span>Configuración</span>
 						</Link>
-					</DropdownMenuItem> */}
+					</DropdownMenuItem>
 				</DropdownMenuGroup>
 				<DropdownMenuSeparator className="my-0" />
 				<DropdownMenuItem asChild>

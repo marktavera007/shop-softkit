@@ -1,6 +1,7 @@
 import React from 'react';
 import ListaCategorias from './components/Categorias';
 import { productos } from './data/productos';
+import Link from 'next/link';
 
 export const ProductosView = () => {
 	return (
@@ -14,7 +15,7 @@ export const ProductosView = () => {
 				</h3> */}
 				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 					{productos.map((producto) => (
-						<div key={producto.id}>
+						<Link key={producto.id} href={`producto/${producto.nombre}`}>
 							<div className="aspect-square group overflow-hidden rounded ">
 								<img
 									src={producto.imagenes[0]?.url}
@@ -32,7 +33,7 @@ export const ProductosView = () => {
 									Stock: {producto.stock}
 								</div>
 							</div>
-						</div>
+						</Link>
 					))}
 				</div>
 			</div>

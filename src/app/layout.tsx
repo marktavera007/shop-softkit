@@ -1,8 +1,7 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono, Poppins } from 'next/font/google';
 import './globals.css';
-import { Header } from '../common/layout/header/Header';
-import Footer from '../common/layout/footer/Footer';
+
 import { auth } from '@base/auth';
 import { SessionProvider } from 'next-auth/react';
 
@@ -39,9 +38,7 @@ export default async function RootLayout({
 				<body
 					className={`${geistSans.variable} ${poppins.className} ${geistMono.variable}  antialiased `}
 				>
-					<Header />
 					{children}
-					<Footer />
 				</body>
 			</html>
 		</SessionProvider>
