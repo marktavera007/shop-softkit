@@ -14,20 +14,20 @@ export default async function TiendaLayout({
 				strategy="afterInteractive"
 				dangerouslySetInnerHTML={{
 					__html: `
-            (function(d, t) {
-              var BASE_URL = "https://n8n-chatwoot.gsd70i.easypanel.host";
-              var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
-              g.src = BASE_URL + "/packs/js/sdk.js";
-              g.defer = true;
-              g.async = true;
-              s.parentNode.insertBefore(g, s);
-              g.onload = function() {
-                window.chatwootSDK.run({
-                  websiteToken: 'PRgKrz9Jhke9ep187hBvKi6o',
-                  baseUrl: BASE_URL
-                })
-              }
-            })(document, "script");
+             (function(d,t) {
+    var BASE_URL="https://n8n-chatwoot.gsd70i.easypanel.host";
+    var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    g.src=BASE_URL+"/packs/js/sdk.js";
+    g.defer = true;
+    g.async = true;
+    s.parentNode.insertBefore(g,s);
+    g.onload=function(){
+      window.chatwootSDK.run({
+        websiteToken: '2x4rDpNGuyV6FmHdZNVYN4jg',
+        baseUrl: BASE_URL
+      })
+    }
+  })(document,"script");
           `,
 				}}
 			/>

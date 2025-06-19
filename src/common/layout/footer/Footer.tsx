@@ -142,7 +142,7 @@ export default function Footer() {
 						<ul className="space-y-2 text-sm">
 							<li className="flex items-center text-gray-300">
 								<Phone className=" mr-2 size-4" />
-								<span>+51 982 749 592</span>
+								<span>+51 982 999 999</span>
 							</li>
 							<li className="flex items-center text-gray-300">
 								<Mail className=" mr-2 size-4" />
@@ -151,7 +151,7 @@ export default function Footer() {
 
 							<li className="flex items-start text-sm text-gray-300">
 								<MapPin className=" mr-2 size-4" />
-								<span>Calle Primero de Mayo, Ate, Lima.</span>
+								<span>Calle 5, distrito, Lima.</span>
 							</li>
 						</ul>
 					</div>
